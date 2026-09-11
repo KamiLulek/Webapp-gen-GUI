@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "webapp-gen-gui"
+dynamic = ["version"]
+description = "Qt GUI manager for isolated Chromium web apps"
+requires-python = ">=3.10"
+dependencies = ["PySide6>=6.7"]
+
+[project.scripts]
+webapp-gen = "webapp_gen.main:main"
+
+[tool.setuptools.packages.find]
+include = ["webapp_gen*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "webapp_gen.__version__"}

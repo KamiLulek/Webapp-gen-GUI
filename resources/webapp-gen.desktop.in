@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=webapp-gen
+Comment=Manage isolated Chromium web apps
+Exec=@EXEC@
+Icon=@ICON@
+Categories=Network;Utility;Qt;
+Terminal=false
+StartupNotify=true
+X-WebAppGen-Version=@VERSION@
