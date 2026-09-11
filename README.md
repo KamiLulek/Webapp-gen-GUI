@@ -1,4 +1,4 @@
-# webapp-gen GUI 2.0
+# webapp-gen GUI 2.2
 
 Graficzny menedżer osobnych aplikacji Chromium dla Linuksa/KDE, będący następcą
 skryptu Bash webapp-gen 1.1.
@@ -28,9 +28,9 @@ Albo w środowisku wirtualnym:
 
 ## Jednoplikowa binarka
 
-    python -m venv .venv-build
-    .venv-build/bin/pip install -r requirements-build.txt
-    PATH="$PWD/.venv-build/bin:$PATH" ./build.sh
+
+    pip install -r requirements-build.txt
+    ./build.sh
 
 Powstanie wykonywalny plik webapp-gen. Pierwszy start binarki Nuitki może być
 odrobinę wolniejszy, bo rozpakowuje ona komponenty Qt.
@@ -46,7 +46,7 @@ Można też przekazać binarkę z innej ścieżki:
 ## CLI
 
     webapp-gen --list
-    webapp-gen --info ChatGPT
+    webapp-gen --info APP
 
 Uruchomienie bez argumentów otwiera GUI.
 
