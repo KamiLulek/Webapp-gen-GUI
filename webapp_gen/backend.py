@@ -17,6 +17,7 @@ KNOWN_FLAGS = (
     "--disable-gpu",
     "--incognito",
     "--start-maximized",
+    "--ozone-platform=x11",
 )
 
 
