@@ -42,6 +42,7 @@ FLAG_LABELS = {
     "--disable-gpu": "Disable GPU",
     "--incognito": "Incognito",
     "--start-maximized": "Start maximized",
+    "--ozone-platform=x11": "Force X11 (XWayland)",
 }
 
 
@@ -158,7 +159,7 @@ class MainWindow(QMainWindow):
         layout.addWidget(flags_title)
         self.flag_checks: dict[str, QCheckBox] = {}
         for flag in KNOWN_FLAGS:
-            check = QCheckBox(FLAG_LABELS[flag])
+            check = QCheckBox(FLAG_LABELS.get(flag, flag))
             check.stateChanged.connect(self.mark_dirty)
             self.flag_checks[flag] = check
             layout.addWidget(check)
