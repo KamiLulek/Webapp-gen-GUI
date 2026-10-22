@@ -1,4 +1,4 @@
-# webapp-gen GUI 2.2
+# webapp-gen GUI 2.3
 
 Graficzny menedżer osobnych aplikacji Chromium dla Linuksa/KDE, będący następcą
 skryptu Bash webapp-gen 1.1.
